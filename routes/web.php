@@ -19,4 +19,6 @@ Route::get('foo', function () {
     return 'Hello World';
 });
 
-Route::get('/user', 'api\UserController@index');
+Route::get('/', 'StaticPagesController@home');
+Route::get('/help', 'StaticPagesController@help');
+Route::get('/about', 'StaticPagesController@about');

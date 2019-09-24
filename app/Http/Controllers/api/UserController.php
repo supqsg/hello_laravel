@@ -10,6 +10,6 @@ class UserController extends Controller
 {
     public function index()
     {
-        Log::stack(['single', 'slack'])->info('Something happened!');
+        phpinfo();
     }
 }
